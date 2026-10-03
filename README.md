@@ -1,24 +1,43 @@
 # Lens Improvement Proposals (LIPs)
 
-The objective of the LIPs is to establish uniformity and offer comprehensive documentation for Lens, including the conventions and frameworks built on top of it. This repository monitors both completed and ongoing enhancements to Lens through the LIPs.
+This fork tracks Lens Improvement Proposals.
 
-LIPs are a path for Lens community to establish a formal framework for open governance and contributions for Lens Protocol. As the Lens ecosystem grows, it is important to enable the ability to participate in the future development of Lens Protocol and set foundations for open governance and path towards decentralization. As Lens Protocol is a neutral and flexible technology stack for social networking use-cases, LIPs provides the basis to ensure that Lens Protocol remains flexible and uniform across all potential use-cases, improvements and ideas within the community.
+## Proposals in this fork
 
-This repository will contain all the open standards that are used by Lens Protocol. The standards are divided into folders. Each folder contains a specific type of standard. For example, the `lens-open-algorithm-standards` folder contains all the standards that are related to the Lens Open Algorithm Standards.
+`main` contains [LIP-16](./LIPs/lip-16.md).
+The title in that file is "LIP-16 Standardizing Fees for Collecting NFTs and Other Paid Actions".
+The LIP-16 status is Draft.
+Most of the proposal body is still inside HTML comments.
 
-This repository draws significant inspiration from the Ethereum Improvement Proposals (EIPs) and their well-structured format. We have made an effort to closely adhere to the same format in order to maintain familiarity for those accustomed to it. As a result, there should be little that feels entirely new to individuals who are accustomed to working with EIPs.
+Branch `lip-6-encrypted-reporting` contains `LIPs/lip-6.md`.
+LIP-6 is on that branch.
+The title in that file is "Verifiable Reporting for Encrypted Publications".
+The LIP-6 status is Draft.
+LIP-6 describes a committing encryption envelope, a verifiable report format, and auditable operator receipts for end-to-end encrypted Lens publications.
+A member who can already read an abusive encrypted post can report that post to a moderator.
+The report contains proof that the revealed text is the content of that post.
+The report reveals that one post.
+The proposal defines the `lens_cipher` v2 envelope.
+The envelope binds each encrypted post to a key commitment.
+The report format includes a deterministic verification algorithm.
+The proposal defines signed operator receipts.
+The proposal requires a timelock to own the operator registry.
 
 ## Contributing
 
-We have different types of proposals which currently are:
+These proposal types are in use:
 
 - Protocol
 - Lens Ecosystem Standard
 - Lens Metadata Standard
 - Lens Open Algorithm Standard
 
-All of these can go through an LIP process. Lens Open Algorithm Standards are the only ones that are not required to go through the LIP process as has its own flow. That said if you want to improve that standards an LIP can be opened for it.
+Each type can go through the LIP process.
+Lens Open Algorithm Standards also have a separate contribution flow.
+You can still open an LIP to change a Lens Open Algorithm Standard.
 
-## Supported standards
+The template is [LIPs/lip-template.md](./LIPs/lip-template.md).
+The template follows the Ethereum Improvement Proposal format.
 
-You can see all the supported standards which that are supported and shaped by LIPs [here](./supported-standards/README.md).
+Supported standards are listed in [supported-standards/README.md](./supported-standards/README.md).
+The `lens-open-algorithm-standards` folder holds the Lens Open Algorithm Standards.
